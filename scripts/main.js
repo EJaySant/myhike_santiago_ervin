@@ -113,7 +113,7 @@ function displayCardsDynamically(collection) {
             allHikes.forEach(doc => { //iterate thru each doc
                 var title = doc.data().name;       // get value of the "name" key
                 var details = doc.data().details;  // get value of the "details" key
-								var hikeCode = doc.data().code;    //get unique ID to each hike to be used for fetching right image
+				var hikeCode = doc.data().code;    //get unique ID to each hike to be used for fetching right image
                 var hikeLength = doc.data().length; //gets the length field
                 var docID = doc.id;
                 let newcard = cardTemplate.content.cloneNode(true); // Clone the HTML template to create a new card (newcard) that will be filled with Firestore data.
